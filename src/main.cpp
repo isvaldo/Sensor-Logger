@@ -102,6 +102,8 @@ GetSensorInfo()
   Serial.println(collect.Humidity);
   Serial.print(" Tvoc");
   Serial.println(collect.Tvoc);
+  Serial.print("memory: ");
+  Serial.println(ESP.getFreeHeap());
   delay(500);
 
   return collect;
